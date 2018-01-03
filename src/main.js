@@ -1,6 +1,8 @@
 import Vue from 'vue'
+import App from './APP'
 let vm = new Vue({
   el: '#app',
-  template: '<h3>Hello</h3>'
+  template: '<App/>',
+  components: { App }
 })
 Vue.use({vm})
