@@ -32,7 +32,7 @@ module.exports = {
       'vue$': 'vue/dist/vue.esm.js',
       'views': resolve('src/views'),
       'components': resolve('src/components'),
-      'api': resolve('src/api')
+      'api': resolve('src/api'),
     }
   },
     // 对相应文件的编译使用什么工具的配置 

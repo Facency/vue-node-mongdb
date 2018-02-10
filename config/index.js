@@ -28,13 +28,24 @@ module.exports = {
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
     proxyTable: {
-      '/api':{
-        target: 'http://localhost:4000',
-        changeOrigin: true
-      },
+      // '/api':{
+      //   target: 'http://localhost:4000',
+      //   changeOrigin: true
+      // },
       '/auth':{
         target: 'http://localhost:4000',
         changeOrigin: true
+      },
+      '/api/ue':{
+        target: 'http://localhost:9999',
+        changeOrigin: true
+      },
+      '/ueditor': {
+        target: 'http://localhost:9999',
+        changeOrigin: true,
+         pathRewrite: {
+           '^/ueditor': '/ueditor'
+          }
       }
     },
     // CSS Sourcemaps off by default because relative paths are "buggy"
